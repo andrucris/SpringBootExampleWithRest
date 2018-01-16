@@ -46,7 +46,7 @@ public class CalculatorWebService {
 	 */
 	@RequestMapping(path = "/add/{a}/{b}/{c}")
 	public String add(@PathVariable("a") String a, @PathVariable("b") String b, @PathVariable("c") String c) {
-		System.out.println("Enter here      ");
+		System.out.println("vvvvvvEnter xxxxxxxxxxxx       here      ");
 		List<Double> doubleList = CalculatorUtils.checkDouble(new String[] { a, b, c });
 
 		if (doubleList != null) {
