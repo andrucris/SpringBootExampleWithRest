@@ -37,7 +37,7 @@ public class CalculatorWebService {
 
 	/**
 	 * 
-	 * method calculate addition for three parameters sent in url
+	 * method calculate addition xxxxxxx for three parameters sent in url
 	 * 
 	 * @param a
 	 * @param b
@@ -46,7 +46,7 @@ public class CalculatorWebService {
 	 */
 	@RequestMapping(path = "/add/{a}/{b}/{c}")
 	public String add(@PathVariable("a") String a, @PathVariable("b") String b, @PathVariable("c") String c) {
-		System.out.println("Enter here");
+		System.out.println("Enter here      ");
 		List<Double> doubleList = CalculatorUtils.checkDouble(new String[] { a, b, c });
 
 		if (doubleList != null) {
